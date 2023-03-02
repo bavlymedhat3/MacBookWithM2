@@ -8,6 +8,9 @@ SCRIPTS_DIR=${SOURCE_DIR}/scripts
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# wget
+brew install wget
+
 # git-secrets
 cd ~
 . ${SCRIPTS_DIR}/git_secrets.sh
