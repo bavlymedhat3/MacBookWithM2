@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+# set -euo pipefail
 
 SOURCE_DIR=$(cd $(dirname ${BASH_SOURCE:-$0}) && pwd)
 SCRIPTS_DIR=${SOURCE_DIR}/scripts
@@ -34,6 +34,10 @@ cd ~
 # Open JDK
 cd ~
 . ${SCRIPTS_DIR}/java.sh
+
+# PHP
+cd ~
+. ${SCRIPTS_DIR}/php.sh
 
 # ssl-scan
 cd ~
