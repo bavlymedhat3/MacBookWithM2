@@ -11,6 +11,10 @@ SCRIPTS_DIR=${SOURCE_DIR}/scripts
 # wget
 brew install wget
 
+# kubectl
+cd ~
+. ${SCRIPTS_DIR}/kubectl.sh
+
 # git-secrets
 cd ~
 . ${SCRIPTS_DIR}/git_secrets.sh
