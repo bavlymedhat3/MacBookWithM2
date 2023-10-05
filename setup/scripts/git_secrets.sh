@@ -2,4 +2,5 @@
 
 git clone https://github.com/awslabs/git-secrets.git
 cd git-secrets
-make install
+sudo make install
+git secrets --register-aws --global
