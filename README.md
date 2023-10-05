@@ -1,3 +1,12 @@
+# Switch default shell as Bash
+
+```sh
+touch ~/.bash_profile
+touch ~/.bashrc
+echo 'export BASH_SILENCE_DEPRECATION_WARNING=1' >> ~/.bash_profile
+```
+
+
 ## Execute the setup scripts
 
 1. execute setup/setup.sh
