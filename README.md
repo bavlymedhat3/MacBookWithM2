@@ -6,6 +6,14 @@ touch ~/.bashrc
 echo 'export BASH_SILENCE_DEPRECATION_WARNING=1' >> ~/.bash_profile
 ```
 
+add following command in ~/.bash_profile
+
+```sh
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+```
+
 
 ## Execute the setup scripts
 
