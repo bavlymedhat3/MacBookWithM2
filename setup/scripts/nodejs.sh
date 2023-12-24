@@ -3,7 +3,7 @@
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 source ~/.bashrc
 
-nvm install v18.18.0
+nvm install v20.10.0
 
 npm install -g yarn@1.22.19
 echo -e "\n# Node.js" >> ~/.bashrc

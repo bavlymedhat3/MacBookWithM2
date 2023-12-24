@@ -5,14 +5,13 @@
 SOURCE_DIR=$(cd $(dirname ${BASH_SOURCE:-$0}) && pwd)
 SCRIPTS_DIR=${SOURCE_DIR}/scripts
 
-# Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.bash_profile
-eval "$(/opt/homebrew/bin/brew shellenv)"
+OS=$(uname -s)
 
-
-# wget
-brew install wget
+# Mac
+if [ ${OS} = 'Darwin' ] ; then
+    cd ~
+    . ${SOURCE_DIR}/mac.sh
+fi
 
 # kubectl
 cd ~
@@ -48,4 +47,8 @@ cd ~
 
 # ssl-scan
 cd ~
-# . ${SCRIPTS_DIR}/ssl_scan.sh
+. ${SCRIPTS_DIR}/ssl_scan.sh
+
+# vim
+cd ~
+. ${SCRIPTS_DIR}/vim.sh
