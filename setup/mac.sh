@@ -5,3 +5,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # wget
 brew install wget
+
+# gnu coreutils
+# https://git.savannah.gnu.org/cgit/coreutils.git
+brew install coreutils
